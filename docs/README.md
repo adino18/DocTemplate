@@ -1,57 +1,46 @@
-# [ProjectName] - Documentation
+# Overview
 
-## Tổng quan
+This directory contains all technical documentation and development guidelines for the project. The documentation is organized into key directories to help AI Agents track and execute tasks efficiently.
 
-Thư mục này chứa toàn bộ tài liệu kỹ thuật và hướng dẫn phát triển cho dự án [ProjectName]. Tài liệu được tổ chức theo 5 thư mục chính để AI Agent dễ dàng theo dõi và thực hiện.
-
-## Cấu trúc Documentation
+## Documentation Structure
 
 ```
 docs/
-├── old/                          # Tài liệu cũ đã xử lý xong
-├── plan/                         # Kế hoạch thực hiện (AI Agent bám vào đây)
-├── plan-detail/                  # Chi tiết kế hoạch thực hiện
-├── rules/                         # Quy định bắt buộc (AI Agent phải tuân thủ)
-└── reference/                     # Tài liệu tham khảo (chi tiết khi cần)
+├── old/                          # Deprecated or archived documentation
+├── [`plan/README.md`](./plan/README.md)                         # Project plans and phases (AI Agents follow this)
+├── [`plan-detail/phase-1.md`](./plan-detail/phase-1.md)                  # Detailed breakdown of plans
+├── [`rules/README.md`](./rules/README.md)                        # Mandatory rules and regulations (AI Agents must adhere)
+└── [`reference/README.md`](./reference/README.md)                    # Reference materials and detailed guides (use when needed)
 ```
 
-## Cách sử dụng Documentation
+## How to Use the Documentation
 
-1. **Đọc plan trước**: Kiểm tra `plan/README.md` để hiểu công việc tiếp theo
-2. **Tuân thủ rules**: Đọc `rules/README.md` trước khi thực hiện chức năng
-3. **Tham khảo reference**: Chỉ sử dụng `reference/` khi cần thông tin chi tiết
-4. **Kiểm tra old**: Tránh sử dụng tài liệu trong `old/` vì đã lỗi thời
+1. **Read the plan first**: Check `plan/README.md` to understand the next tasks.
+2. **Adhere to rules**: Read `rules/README.md` before implementing any features (mandatory regulations and workflows).
+3. **Reference materials**: Use `reference/` only for detailed information when necessary (optional guides and best practices).
+4. **Avoid old docs**: Do not use files in `old/` as they are outdated.
 
-## Rules vs Reference
+## Workflow for AI Agents
 
-### Rules (docs/rules/)
-- **Bắt buộc**: AI Agent phải tuân thủ các quy định này
-- **Luồng xử lý**: Định nghĩa workflow cho development
-- **Ngắn gọn**: Tập trung vào quy định và luồng xử lý
-- **Trước khi thực hiện**: Phải đọc rules trước khi bắt đầu task
-
-### Reference (docs/reference/)
-- **Tham khảo**: Hướng dẫn và thông tin chi tiết
-- **Khi cần thiết**: Chỉ sử dụng khi cần thông tin chi tiết
-- **Chi tiết**: Có thể chứa code examples và best practices
-- **Sau khi đọc rules**: Tham khảo sau khi đã hiểu quy định
-
-## Quy trình làm việc cho AI Agent
-
-1. **Đọc plan**: Kiểm tra `plan/README.md` để hiểu task tiếp theo
-2. **Đọc rules**: Đọc các quy định liên quan trong `rules/`
-3. **Tham khảo reference**: Chỉ khi cần thông tin chi tiết
-4. **Thực hiện**: Theo đúng luồng xử lý đã định nghĩa
-5. **Cập nhật**: Cập nhật progress trong plan khi hoàn thành
+1. **Read plan**: Check `plan/README.md` for upcoming tasks.
+2. **Read rules**: Review relevant rules in `rules/`.
+3. **Reference if needed**: Consult `reference/` for detailed info.
+4. **Implement**: Follow the defined workflows.
+5. **Request confirmation**: After implementation, ask the user if they want to update related documentation (e.g., plans or references). Only update if confirmed to avoid unnecessary revisions.
+6. **Update progress**: Update plans upon completion (if confirmed).
 
 ## Maintenance
 
 ### Regular Updates
-- Plan được cập nhật từng phase
-- Rules được cập nhật khi có thay đổi quy trình
-- Reference được cập nhật khi có thay đổi kỹ thuật
+- Plans are updated per phase.
+- Rules are updated when processes change.
+- References are updated for technical changes.
 
 ### Quality Assurance
-- Đảm bảo tài liệu nhất quán và dễ đọc
-- Kiểm tra broken links và references
-- Giữ tài liệu đồng bộ với code hiện tại
+- Ensure documentation is consistent and readable.
+- Check for broken links and references.
+- Keep docs in sync with current code.
+
+## General Rules
+- All documents in this directory are written in English by default, except for specific documents that require a different language.
+- All regulations and rules in this file are of the highest priority and must be followed in every action performed by AI Agents.
