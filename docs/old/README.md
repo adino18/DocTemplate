@@ -1,4 +1,11 @@
-# Old Documentation
+---
+title: "Archived Documentation"
+description: "Deprecated or outdated documentation that AI agents should avoid unless explicitly instructed."
+tags: [deprecated, archive]
+intent: archive
+last_modified: 2025-10-27
+schema_version: 1
+---
 
 ## Overview
 **Keywords:** archived, deprecated, outdated, ignore unless instructed.

@@ -1,4 +1,11 @@
-# [ProjectName] - Reference Documentation
+---
+title: "Reference Documentation"
+description: "Detailed reference materials, guides, and technical information for the project, used by AI agents when specific details are needed."
+tags: [api, howto, guide, reference]
+intent: reference
+last_modified: 2025-10-27
+schema_version: 1
+---
 
 ## Overview
 
