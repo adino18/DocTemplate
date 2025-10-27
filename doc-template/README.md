@@ -61,12 +61,20 @@ docs/
 
 ## Workflow for AI Agents (Must follow)
 
-1. **Read plan**: Check `plan/README.md` for upcoming tasks.
-2. **Read rules**: Review relevant rules in `rules/`.
-3. **Reference if needed**: Consult `reference/` for detailed info.
-4. **Implement**: Follow the defined workflows.
-5. **Request confirmation**: After implementation, ask the user if they want to update related documentation (e.g., plans or references). Only update if confirmed to avoid unnecessary revisions.
-6. **Update progress**: Update plans upon completion (if confirmed).
+Follow the complete workflow process outlined in [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md):
+
+1. **Ideation**: Generate and refine ideas based on requirements.
+2. **Planning**: Create comprehensive plan and plan-detail documents.
+3. **User Review**: Get user approval on plans before implementation.
+4. **Implementation**: Execute tasks according to approved plans.
+5. **User Evaluation**: Get user feedback on implemented functionality.
+6. **Documentation Update**: Update documentation to reflect actual implementation (with user confirmation).
+7. **Repeat**: Continue the cycle for additional features or improvements.
+
+For specific guidance on creating plan and plan-detail documents, refer to:
+- [`rules/ai-guidelines-plan-structure.md`](./rules/ai-guidelines-plan-structure.md)
+- [`rules/ai-content-creation-checklist.md`](./rules/ai-content-creation-checklist.md)
+- [`examples/plan-structure-example.md`](./examples/plan-structure-example.md)
 
 ## AI Agent Retrieval Tips
 - Prefer files whose front-matter intent/tags match your task before reading full content.
@@ -108,6 +116,10 @@ docs/
 - [`reference/README.md`](./reference/README.md): Reference materials and guides.
 - [`old/README.md`](./old/README.md): Archived documentation.
 - [`plan-detail/phase-1.md`](./plan-detail/phase-1.md): Detailed breakdown of Phase 1.
+- [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md): Complete workflow process for AI agents.
+- [`rules/ai-guidelines-plan-structure.md`](./rules/ai-guidelines-plan-structure.md): Guidelines for AI agents on plan and plan-detail structure.
+- [`rules/ai-content-creation-checklist.md`](./rules/ai-content-creation-checklist.md): Checklist for AI agents when creating content.
+- [`examples/plan-structure-example.md`](./examples/plan-structure-example.md): Complete examples of plan and plan-detail structure.
 
 ## Front-matter template (copy/paste)
 ```yaml

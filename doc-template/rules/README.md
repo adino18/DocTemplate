@@ -7,7 +7,7 @@ last_modified: 2025-10-27
 schema_version: 1
 ---
 
-**AI Agents:** Use this structure to answer questions based on specific project requirements, and create rule-xxx files for detailed guidelines. Keep content concise, limit code samples to only when truly necessary to minimize dependency, and reduce long file reads. Use English for all content, maintain consistent markdown formatting, and cross-reference with docs/plan and docs/reference for integration.
+**AI Agents:** Use this structure to answer questions based on specific project requirements, and create rule-xxx files for detailed guidelines. Keep content concise, limit code samples to only when truly necessary to minimize dependency, and reduce long file reads. Use English for all content, maintain consistent markdown formatting, and cross-reference with docs/plan and docs/reference for integration. Follow the complete workflow process outlined in [`ai-workflow-process.md`](./ai-workflow-process.md) for all project activities.
 
 ## Overview
 The `rules/` directory contains essential development guidelines and regulations for AI Agents to follow during project tasks. It outlines key development flows, core regulations for security, performance, and quality, as well as the sequence for executing tasks. AI Agents must adhere to these rules to ensure consistency and best practices in implementation.
@@ -35,6 +35,9 @@ The `rules/` directory contains essential development guidelines and regulations
 - [`docs/README.md`](../README.md): Main documentation overview.
 - [`plan/README.md`](../plan/README.md): Project plans and phases.
 - [`reference/README.md`](../reference/README.md): Reference materials.
+- [`ai-workflow-process.md`](./ai-workflow-process.md): Complete workflow process for AI agents.
+- [`ai-guidelines-plan-structure.md`](./ai-guidelines-plan-structure.md): Guidelines for AI agents on plan and plan-detail structure.
+- [`ai-content-creation-checklist.md`](./ai-content-creation-checklist.md): Checklist for AI agents when creating content.
 - For specific requirements (e.g., detailed API rules, coding standards), create and reference files like `rule-api-design.md`, `rule-coding-standards.md`, etc., in this directory. AI Agents should check for these files when needed.
 
 ## Sample Content
