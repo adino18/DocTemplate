@@ -1,3 +1,14 @@
+---
+title: "Phase 1: Detailed Plan"
+description: "Detailed breakdown of Phase 1 tasks and steps for project implementation."
+tags: [plan, detail, phase-1]
+intent: plan-detail
+last_modified: 2025-10-27
+schema_version: 1
+aliases: []
+see_also:
+  - ./plan/README.md
+---
 # Phase 1: [Description]
 
 **Important:** This file focuses solely on detailed plans and required functions for Phase 1. Do not add unrelated content, especially code samples. Only include descriptions of goals, steps, and actionable tasks.
