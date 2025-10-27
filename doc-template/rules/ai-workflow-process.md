@@ -16,35 +16,75 @@ This document outlines the complete workflow process that AI agents should follo
 ## Complete Workflow Overview
 
 ```
-1. Ideation → 2. Planning → 3. User Review → 4. Implementation → 
-5. User Evaluation → 6. Documentation Update → 7. Repeat as needed
+1. Receive Requirements → 2. High-Level Ideation → 3. User Review →
+4. Planning → 5. User Review → 6. Implementation →
+7. User Evaluation → 8. Documentation Update → 9. Repeat as needed
 ```
 
 ## Detailed Workflow Steps
 
-### Step 1: Ideation
+### Step 1: Receive Requirements
 
-**Objective**: Generate and refine initial ideas based on requirements.
+**Objective**: Understand and document the initial requirements from the user.
 
 **Process**:
-1. **Understand Requirements**
-   - Read [`reference/requirement.md`](../reference/requirement.md) thoroughly
-   - Identify key objectives and constraints
-   - Clarify any ambiguities with the user
+1. **Gather Requirements**
+   - Receive and document user requirements
+   - Ask clarifying questions to ensure understanding
+   - Document all constraints, assumptions, and success criteria
 
-2. **Brainstorm Solutions**
-   - Generate multiple approaches to meet requirements
-   - Consider technical feasibility and resource constraints
-   - Evaluate pros and cons of each approach
+2. **Confirm Understanding**
+   - Summarize requirements back to the user for confirmation
+   - Identify any ambiguities or missing information
+   - Get user approval that requirements are correctly understood
 
-3. **Select Best Approach**
-   - Choose the most suitable solution based on requirements
-   - Justify the selection with clear reasoning
-   - Get user approval before proceeding
+**Deliverables**: Confirmed and documented requirements
 
-**Deliverables**: Approved approach with clear rationale
+### Step 2: High-Level Ideation
 
-### Step 2: Planning
+**Objective**: Generate and brainstorm high-level functional concepts based on requirements.
+
+**Process**:
+1. **Brainstorm Functions**
+   - Generate high-level functional concepts to meet requirements
+   - Consider different approaches and architectural patterns
+   - Evaluate feasibility and complexity of each approach
+
+2. **Create High-Level Overview**
+   - Document the main functional areas and features
+   - Create rough sketches or diagrams if helpful
+   - Identify major components and their relationships
+
+3. **Present to User**
+   - Present the high-level functional concepts to the user
+   - Explain the rationale behind each approach
+   - Get user feedback and approval on the direction
+
+**Deliverables**: User-approved high-level functional concept
+
+### Step 3: User Review (High-Level Concepts)
+
+**Objective**: Get user feedback and approval on the high-level functional concepts.
+
+**Process**:
+1. **Present Concepts**
+   - Share the high-level functional concepts with the user
+   - Explain the benefits and trade-offs of each approach
+   - Highlight how each concept meets the requirements
+
+2. **Collect Feedback**
+   - Listen carefully to user preferences and concerns
+   - Document all feedback for consideration
+   - Ask clarifying questions if needed
+
+3. **Iterate if Necessary**
+   - Modify concepts based on user feedback
+   - Address any concerns or issues raised
+   - Re-present updated concepts until approved
+
+**Deliverables**: User-approved high-level functional concept
+
+### Step 4: Planning
 
 **Objective**: Create comprehensive project plans and detailed implementation steps.
 
@@ -61,20 +101,25 @@ This document outlines the complete workflow process that AI agents should follo
    - Include dependencies and success criteria
    - Ensure proper cross-references with main plan
 
-3. **Review Plan Structure**
+3. **Create Additional Related Documents**
+   - Create any other necessary documentation (e.g., technical specifications, API documentation)
+   - Ensure all documents are properly cross-referenced
+   - Follow established documentation standards
+
+4. **Review Plan Structure**
    - Verify all relationships between plan and plan-detail
    - Check for consistency in numbering and terminology
    - Ensure all references are correct
 
-**Deliverables**: Complete plan and plan-detail documentation
+**Deliverables**: Complete plan, plan-detail, and related documentation
 
-### Step 3: User Review
+### Step 5: User Review (Plans and Documentation)
 
-**Objective**: Get user feedback and approval on the created plans.
+**Objective**: Get user feedback and approval on the created plans and documentation.
 
 **Process**:
-1. **Present Plans**
-   - Share the complete plan and plan-detail with the user
+1. **Present Plans and Documentation**
+   - Share the complete plan, plan-detail, and related documents with the user
    - Highlight key phases and critical dependencies
    - Explain the rationale behind the proposed approach
 
@@ -84,13 +129,13 @@ This document outlines the complete workflow process that AI agents should follo
    - Ask clarifying questions if needed
 
 3. **Iterate if Necessary**
-   - Modify plans based on user feedback
+   - Modify plans and documentation based on user feedback
    - Address any concerns or issues raised
    - Re-present updated plans until approved
 
-**Deliverables**: User-approved plans
+**Deliverables**: User-approved plans and documentation
 
-### Step 4: Implementation
+### Step 6: Implementation
 
 **Objective**: Implement the functionality according to the approved plans.
 
@@ -113,7 +158,7 @@ This document outlines the complete workflow process that AI agents should follo
 
 **Deliverables**: Implemented functionality according to specifications
 
-### Step 5: User Evaluation
+### Step 7: User Evaluation
 
 **Objective**: Get user feedback on the implemented functionality.
 
@@ -135,7 +180,7 @@ This document outlines the complete workflow process that AI agents should follo
 
 **Deliverables**: User-evaluated and approved functionality
 
-### Step 6: Documentation Update
+### Step 8: Documentation Update
 
 **Objective**: Update documentation to reflect the actual implementation.
 
@@ -156,9 +201,14 @@ This document outlines the complete workflow process that AI agents should follo
    - Update [`reference/`](../reference/) materials if technical details changed
    - Ensure all cross-references remain accurate
 
-**Deliverables**: Updated documentation reflecting actual implementation
+4. **Adjust Functionality if Needed**
+   - If user requests changes to functionality instead of documentation updates
+   - Implement the requested adjustments
+   - Return to Step 7 for user evaluation
 
-### Step 7: Repeat Cycle
+**Deliverables**: Updated documentation reflecting actual implementation or adjusted functionality
+
+### Step 9: Repeat Cycle
 
 **Objective**: Continue the iterative process as needed for additional features or improvements.
 
@@ -172,6 +222,11 @@ This document outlines the complete workflow process that AI agents should follo
    - Begin again at Step 1 for new features
    - Or start at appropriate step for minor adjustments
    - Maintain consistency with established processes
+
+3. **Repeat Documentation Update Process**
+   - After each implementation cycle, always ask if documentation needs updating
+   - Follow Step 8 process for documentation updates
+   - Continue this cycle until all requirements are met
 
 **Deliverables**: Continuous improvement and feature development
 

@@ -63,13 +63,15 @@ docs/
 
 Follow the complete workflow process outlined in [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md):
 
-1. **Ideation**: Generate and refine ideas based on requirements.
-2. **Planning**: Create comprehensive plan and plan-detail documents.
-3. **User Review**: Get user approval on plans before implementation.
-4. **Implementation**: Execute tasks according to approved plans.
-5. **User Evaluation**: Get user feedback on implemented functionality.
-6. **Documentation Update**: Update documentation to reflect actual implementation (with user confirmation).
-7. **Repeat**: Continue the cycle for additional features or improvements.
+1. **Receive Requirements**: Understand and document initial requirements from the user.
+2. **High-Level Ideation**: Brainstorm high-level functional concepts based on requirements.
+3. **User Review**: Get user approval on high-level concepts.
+4. **Planning**: Create comprehensive plan, plan-detail, and related documents.
+5. **User Review**: Get user approval on plans and documentation.
+6. **Implementation**: Execute tasks according to approved plans.
+7. **User Evaluation**: Get user feedback on implemented functionality.
+8. **Documentation Update**: Update documentation to reflect actual implementation (with user confirmation) or adjust functionality if requested.
+9. **Repeat**: Continue the cycle for additional features or improvements.
 
 For specific guidance on creating plan and plan-detail documents, refer to:
 - [`rules/ai-guidelines-plan-structure.md`](./rules/ai-guidelines-plan-structure.md)
