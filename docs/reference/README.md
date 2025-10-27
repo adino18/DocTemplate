@@ -1,32 +1,48 @@
-# [ProjectName] - Tài Liệu Tham Khảo
+# [ProjectName] - Reference Documentation
 
-## Tổng quan
-Thư mục `reference/` chứa các tài liệu tham khảo chi tiết, hướng dẫn và thông tin kỹ thuật cho dự án [ProjectName]. AI Agent chỉ sử dụng khi cần thông tin chi tiết.
+## Overview
 
-## Cấu trúc tài liệu
+The `reference/` directory contains detailed reference materials, guides, and technical information for the [ProjectName] project. AI Agents should only use this when detailed information is required.
 
-### 1. [API Documentation](./api-documentation.md)
-Tài liệu chi tiết về API endpoints, request/response examples, và authentication methods.
+## Document Structure
 
-### 2. [Database Schema](./database-schema.md)
-Tài liệu về cấu trúc database, table relationships, và schema details.
+### 1. Ideas (idea-*.md)
+Documentation on project ideas, brainstorming sessions, and conceptual foundations. Use prefix `idea-` for specific topics, e.g., `idea-brainstorming.md`, `idea-features.md`.
 
-### 3. [Development Setup](./development-setup.md)
-Hướng dẫn chi tiết thiết lập môi trường phát triển cho backend và frontend.
+### 2. Future Directions (future-*.md)
+Outlines for future development, potential expansions, and long-term goals. Use prefix `future-` for specific areas, e.g., `future-roadmap.md`, `future-scalability.md`.
 
-### 4. [Deployment Guidelines](./deployment-guidelines.md)
-Hướng dẫn triển khai hệ thống, Docker configuration, và production setup.
+### 3. Extensions (extension-*.md)
+Guidelines for extending the project, adding new features, and integrations. Use prefix `extension-` for specific extensions, e.g., `extension-plugins.md`, `extension-integrations.md`.
 
-### 5. [Mobile Integration](./mobile-integration.md)
-Hướng dẫn tích hợp ứng dụng di động, PWA implementation, và native app considerations.
+### 4. Libraries (library-*.md)
+Information on libraries, dependencies, and third-party tools used in the project. Use prefix `library-` for specific libraries, e.g., `library-frontend.md`, `library-backend.md`.
 
-### 6. [UI/UX Guidelines](./ui-ux-guidelines.md)
-Hướng dẫn thiết kế giao diện và trải nghiệm người dùng, design system, và component library.
+### 5. Source Code Structure (source-*.md)
+Detailed breakdown of the source code organization, modules, and architecture. Use prefix `source-` for specific sections, e.g., `source-frontend.md`, `source-backend.md`.
 
-### 7. [Security Guidelines](./security-guidelines.md)
-Hướng dẫn bảo mật, authentication, và best practices cho security.
+### 6. [API Documentation](./api-documentation.md)
+Detailed documentation on API endpoints, request/response examples, and authentication methods.
 
-### 8. [Testing Guidelines](./testing-guidelines.md)
-Hướng dẫn testing, unit tests, integration tests, và E2E testing.
+### 7. [Database Schema](./database-schema.md)
+Documentation on database structure, table relationships, and schema details.
 
-*Lưu ý: AI Agent nên ưu tiên đọc `rules/` và `plan/` trước khi tham khảo `reference/`.*
+### 8. [Development Setup](./development-setup.md)
+Detailed guide for setting up the development environment for backend and frontend.
+
+### 9. [Deployment Guidelines](./deployment-guidelines.md)
+Guidelines for system deployment, Docker configuration, and production setup.
+
+### 10. [Mobile Integration](./mobile-integration.md)
+Guide for mobile app integration, PWA implementation, and native app considerations.
+
+### 11. [UI/UX Guidelines](./ui-ux-guidelines.md)
+Guidelines for user interface and experience design, design system, and component library.
+
+### 12. [Security Guidelines](./security-guidelines.md)
+Guidelines for security, authentication, and best practices.
+
+### 13. [Testing Guidelines](./testing-guidelines.md)
+Guidelines for testing, unit tests, integration tests, and E2E testing.
+
+*Note: AI Agents should prioritize reading `rules/` and `plan/` before referencing `reference/`.*

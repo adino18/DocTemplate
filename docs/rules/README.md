@@ -1,76 +1,35 @@
-# [ProjectName] - Quy Tắc Phát Triển
+# [ProjectName] - Development Rules
 
-## Tổng quan
-Thư mục `rules/` chứa các quy định bắt buộc AI Agent phải tuân thủ trước khi thực hiện chức năng.
+**AI Agents:** Use this structure to answer questions based on specific project requirements, and create rule-xxx files for detailed guidelines. Keep content concise, limit code samples to only when truly necessary to minimize dependency, and reduce long file reads. Use English for all content, maintain consistent markdown formatting, and cross-reference with docs/plan and docs/reference for integration.
 
-## Luồng xử lý phát triển
+## Overview
+The `rules/` directory contains essential development guidelines and regulations for AI Agents to follow during project tasks. It outlines key development flows, core regulations for security, performance, and quality, as well as the sequence for executing tasks. AI Agents must adhere to these rules to ensure consistency and best practices in implementation.
 
-### 1. Backend Development Flow
-```
-API Design → Database Design → Implementation → Testing → Deployment
-```
+## Key Development Flows
+- What are the main backend development steps?
+- What are the frontend development processes?
+- How should API development be structured?
+- What is the database change workflow?
 
-**Bắt buộc:**
-1. Đọc [`api-design.md`](./api-design.md) trước khi tạo API mới
-2. Đọc [`database-design.md`](./database-design.md) trước khi thay đổi schema
-3. Tuân thủ [`coding-standards.md`](./coding-standards.md) khi viết code
+## Core Regulations
+- What security measures are required?
+- What performance standards must be met?
+- What quality assurance rules apply?
 
-### 2. Frontend Development Flow
-```
-UI/UX Design → Component Development → API Integration → Testing → Build
-```
+## Task Execution Sequence
+- What steps should be followed before starting a task?
+- How to integrate with reference and plan documents?
+- What is the order for implementation, testing, and deployment?
 
-**Bắt buộc:**
-1. Tham khảo UI/UX guidelines trong `reference/`
-2. Sử dụng API client được generate từ backend
-3. Tuân thủ coding standards cho framework
+## Related Files
+- [`README.md`](./README.md): Main overview of development rules (this file).
+- For specific requirements (e.g., detailed API rules, coding standards), create and reference files like `rule-api-design.md`, `rule-coding-standards.md`, etc., in this directory. AI Agents should check for these files when needed.
 
-### 3. API Development Workflow
-```
-1. Design API → 2. Generate OpenAPI → 3. Implement Backend → 4. Generate Client → 5. Implement Frontend
-```
-
-**Quy định:**
-- Backend phải generate OpenAPI spec trước
-- Frontend chỉ sử dụng API client được generate
-- Không được hard-code API calls
-
-### 4. Database Change Workflow
-```
-1. Design Schema → 2. Create Migration → 3. Update Models → 4. Test Migration → 5. Deploy
-```
-
-**Quy định:**
-- Mọi thay đổi schema phải qua migration
-- Migration phải có rollback script
-- Test migration trên development trước
-
-## Các quy định quan trọng
-
-### Security Rules
-- Mọi API phải có authentication
-- Input validation là bắt buộc
-- Không bao giờ expose sensitive data
-
-### Performance Rules
-- API response time < 200ms
-- Database queries phải có index
-- Frontend bundle size < 1MB
-
-### Code Quality Rules
-- Test coverage > 80%
-- Code review là bắt buộc
-- Tuân thủ coding standards
-
-## Trình tự thực hiện task
-
-1. **Đọc rules liên quan** trước khi bắt đầu
-2. **Kiểm tra reference** nếu cần thông tin chi tiết
-3. **Tham khảo plan** để hiểu thứ tự ưu tiên
-4. **Implement** theo quy định
-5. **Test** theo testing guidelines
-6. **Deploy** theo deployment guidelines
+## Sample Content
+- **Backend Flow Example:** API Design → Database Design → Implementation → Testing → Deployment
+- **Security Rule Example:** All APIs must have authentication and input validation.
+- **Sequence Example:** 1. Read rules, 2. Check reference, 3. Refer to plan, 4. Implement, 5. Test, 6. Deploy.
 
 ---
 
-*Lưu ý: AI Agent phải đọc các quy định này trước khi thực hiện bất kỳ task nào.*
+*Note: AI Agents must read these regulations before performing any task. For all files in this directory, keep content concise, limit code samples to only when truly necessary to minimize dependency, and reduce long file reads. Review and update files periodically to maintain relevance.*
