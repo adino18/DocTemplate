@@ -61,19 +61,28 @@ docs/
 
 ## Workflow for AI Agents (Must follow)
 
-Follow the complete workflow process outlined in [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md):
+**CRITICAL**: AI agents MUST follow the exact sequence outlined below. Do not skip steps or change the order.
+
+Follow the complete workflow process outlined in [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md) and use the mandatory checklist in [`rules/ai-workflow-checklist.md`](./rules/ai-workflow-checklist.md):
 
 1. **Receive Requirements**: Understand and document initial requirements from the user.
-2. **High-Level Ideation**: Brainstorm high-level functional concepts based on requirements.
-3. **User Review**: Get user approval on high-level concepts.
-4. **Planning**: Create comprehensive plan, plan-detail, and related documents.
-5. **User Review**: Get user approval on plans and documentation.
+2. **High-Level Planning**: Create ONLY the high-level plan in [`plan/README.md`](./plan/README.md).
+3. **User Review**: Get user approval on high-level plan BEFORE creating detailed plans.
+4. **Detailed Planning**: Only after approval, create detailed plans in [`plan-detail/`](./plan-detail/) directory.
+5. **User Review**: Get user approval on detailed plans.
 6. **Implementation**: Execute tasks according to approved plans.
 7. **User Evaluation**: Get user feedback on implemented functionality.
 8. **Documentation Update**: Update documentation to reflect actual implementation (with user confirmation) or adjust functionality if requested.
 9. **Repeat**: Continue the cycle for additional features or improvements.
 
+**IMPORTANT SEQUENCE RULES**:
+- Always read requirements from [`reference/requirement.md`](./reference/requirement.md) first
+- Create high-level plan BEFORE detailed plans
+- Get user approval at each review stage
+- Do NOT proceed to next step without explicit user approval
+
 For specific guidance on creating plan and plan-detail documents, refer to:
+- [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md): Complete workflow process with mandatory checklist
 - [`rules/ai-guidelines-plan-structure.md`](./rules/ai-guidelines-plan-structure.md)
 - [`rules/ai-content-creation-checklist.md`](./rules/ai-content-creation-checklist.md)
 - [`examples/plan-structure-example.md`](./examples/plan-structure-example.md)
@@ -118,7 +127,7 @@ For specific guidance on creating plan and plan-detail documents, refer to:
 - [`reference/README.md`](./reference/README.md): Reference materials and guides.
 - [`old/README.md`](./old/README.md): Archived documentation.
 - [`plan-detail/phase-1.md`](./plan-detail/phase-1.md): Detailed breakdown of Phase 1.
-- [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md): Complete workflow process for AI agents.
+- [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md): Complete workflow process with mandatory checklist.
 - [`rules/ai-guidelines-plan-structure.md`](./rules/ai-guidelines-plan-structure.md): Guidelines for AI agents on plan and plan-detail structure.
 - [`rules/ai-content-creation-checklist.md`](./rules/ai-content-creation-checklist.md): Checklist for AI agents when creating content.
 - [`examples/plan-structure-example.md`](./examples/plan-structure-example.md): Complete examples of plan and plan-detail structure.

@@ -30,12 +30,24 @@ The `rules/` directory contains essential development guidelines and regulations
 - How to integrate with reference and plan documents?
 - What is the order for implementation, testing, and deployment?
 
+## Critical Workflow Rules (MANDATORY)
+
+**IMPORTANT**: The workflow sequence is mandatory and must be followed exactly:
+
+1. **Requirements First**: Always start with [`../reference/requirement.md`](../reference/requirement.md)
+2. **High-Level Plan**: Create only [`../plan/README.md`](../plan/README.md) first
+3. **Get Approval**: User must approve high-level plan before proceeding
+4. **Detailed Plans**: Only then create files in [`../plan-detail/`](../plan-detail/) directory
+5. **Get Approval**: User must approve detailed plans before implementation
+
+**Use the checklist in [`ai-workflow-process.md`](./ai-workflow-process.md) for every project to ensure compliance.**
+
 ## References
 - [`README.md`](./README.md): Main overview of development rules (this file).
 - [`docs/README.md`](../README.md): Main documentation overview.
 - [`plan/README.md`](../plan/README.md): Project plans and phases.
 - [`reference/README.md`](../reference/README.md): Reference materials.
-- [`ai-workflow-process.md`](./ai-workflow-process.md): Complete workflow process for AI agents.
+- [`ai-workflow-process.md`](./ai-workflow-process.md): Complete workflow process with mandatory checklist.
 - [`ai-guidelines-plan-structure.md`](./ai-guidelines-plan-structure.md): Guidelines for AI agents on plan and plan-detail structure.
 - [`ai-content-creation-checklist.md`](./ai-content-creation-checklist.md): Checklist for AI agents when creating content.
 - For specific requirements (e.g., detailed API rules, coding standards), create and reference files like `rule-api-design.md`, `rule-coding-standards.md`, etc., in this directory. AI Agents should check for these files when needed.

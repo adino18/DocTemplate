@@ -16,10 +16,26 @@ This document outlines the complete workflow process that AI agents should follo
 ## Complete Workflow Overview
 
 ```
-1. Receive Requirements → 2. High-Level Ideation → 3. User Review →
-4. Planning → 5. User Review → 6. Implementation →
+1. Receive Requirements → 2. High-Level Planning → 3. User Review →
+4. Detailed Planning → 5. User Review → 6. Implementation →
 7. User Evaluation → 8. Documentation Update → 9. Repeat as needed
 ```
+
+## Critical Workflow Sequence (MUST FOLLOW)
+
+**IMPORTANT**: AI agents MUST follow this exact sequence. Do not skip steps or change the order:
+
+1. **REQUIREMENTS FIRST**: Always start by reading and understanding requirements from [`reference/requirement.md`](../reference/requirement.md)
+2. **HIGH-LEVEL PLAN**: Create only the high-level plan in [`plan/README.md`](../plan/README.md) first
+3. **USER APPROVAL**: Get explicit user approval on the high-level plan BEFORE creating detailed plans
+4. **DETAILED PLANS**: Only after user approval, create detailed plans in [`plan-detail/`](../plan-detail/) directory
+5. **CONTINUE**: Proceed with implementation only after both high-level and detailed plans are approved
+
+**DO NOT**:
+- Create detailed plans before getting approval on high-level plan
+- Skip the user review step between high-level and detailed planning
+- Work on multiple documentation directories simultaneously in the wrong order
+- Copy structure from doc-template to docs before following the proper workflow
 
 ## Detailed Workflow Steps
 
@@ -277,3 +293,50 @@ This document outlines the complete workflow process that AI agents should follo
 - [`../plan/README.md`](../plan/README.md): Plan template
 - [`../plan-detail/README.md`](../plan-detail/README.md): Plan-detail overview
 - [`../reference/requirement.md`](../reference/requirement.md): Project requirements
+
+## Workflow Checklist (Mandatory)
+
+### Phase 1: Requirements Analysis
+- [ ] **Read requirements first**: Review [`../reference/requirement.md`](../reference/requirement.md) before starting any work
+- [ ] **Confirm understanding**: Summarize requirements back to user for confirmation
+- [ ] **Document requirements**: Ensure all requirements are properly documented
+
+### Phase 2: High-Level Planning
+- [ ] **Create high-level plan only**: Create/update only [`../plan/README.md`](../plan/README.md) with high-level phases and tasks
+- [ ] **Do NOT create detailed plans yet**: Do not touch [`../plan-detail/`](../plan-detail/) directory at this stage
+- [ ] **Focus on phases only**: Include only phase descriptions and high-level tasks
+
+### Phase 3: User Approval (High-Level)
+- [ ] **Present high-level plan**: Show the user the high-level plan from [`../plan/README.md`](../plan/README.md)
+- [ ] **Get explicit approval**: User must explicitly approve the high-level plan
+- [ ] **Wait for confirmation**: Do not proceed until user confirms approval
+
+### Phase 4: Detailed Planning
+- [ ] **Create detailed plans**: Only after high-level approval, create/update files in [`../plan-detail/`](../plan-detail/) directory
+- [ ] **Reference high-level plan**: Ensure detailed plans align with approved high-level plan
+- [ ] **Cross-reference properly**: Add proper cross-references between plan and plan-detail files
+
+### Phase 5: User Approval (Detailed)
+- [ ] **Present detailed plans**: Show the user the detailed plans from [`../plan-detail/`](../plan-detail/) directory
+- [ ] **Get explicit approval**: User must explicitly approve the detailed plans
+- [ ] **Wait for confirmation**: Do not proceed with implementation until user confirms approval
+
+### Phase 6: Implementation
+- [ ] **Follow approved plans**: Implement according to both approved high-level and detailed plans
+- [ ] **Track progress**: Mark completed tasks in the plan files
+- [ ] **Document deviations**: Note any deviations from the original plan with reasons
+
+## Common Mistakes to Avoid
+
+### ❌ DO NOT:
+- Create detailed plans before getting approval on high-level plan
+- Skip user review steps between planning phases
+- Work on multiple documentation directories simultaneously in wrong order
+- Copy structure from doc-template to docs before following proper workflow
+- Start implementation before getting approval on both high-level and detailed plans
+
+### ✅ DO:
+- Always start with requirements analysis
+- Get explicit user approval at each review stage
+- Follow the exact sequence: Requirements → High-Level Plan → Approval → Detailed Plan → Approval → Implementation
+- Update documentation to reflect actual implementation after each phase
