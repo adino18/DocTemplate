@@ -1,4 +1,10 @@
 ## Plan
+
+**Important:** This file focuses solely on project plans and required functions. Do not add unrelated content, especially code samples. Only include descriptions of goals, phases, and subtasks.
+
+## Overview
+**Keywords:** phases, subtasks, goals, project breakdown, tasks.
+
 **What specific work needs to be done? Break down the project into phases and detailed tasks.**
 
 For each phase, answer:

@@ -4,6 +4,8 @@
 
 The `reference/` directory contains detailed reference materials, guides, and technical information for the [ProjectName] project. AI Agents should only use this when detailed information is required.
 
+**Keywords:** ideas, future directions, extensions, libraries, source code, API, database, setup, deployment, mobile, UI/UX, security, testing.
+
 ## Document Structure
 
 ### 1. Ideas (idea-*.md)

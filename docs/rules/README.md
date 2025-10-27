@@ -5,6 +5,8 @@
 ## Overview
 The `rules/` directory contains essential development guidelines and regulations for AI Agents to follow during project tasks. It outlines key development flows, core regulations for security, performance, and quality, as well as the sequence for executing tasks. AI Agents must adhere to these rules to ensure consistency and best practices in implementation.
 
+**Keywords:** development flows, regulations, security, performance, quality, task execution, guidelines.
+
 ## Key Development Flows
 - What are the main backend development steps?
 - What are the frontend development processes?
