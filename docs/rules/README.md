@@ -1,4 +1,11 @@
-# [ProjectName] - Development Rules
+---
+title: "Development Rules"
+description: "Essential development guidelines, regulations, and workflows for AI agents to follow during project tasks."
+tags: [rules, process, guidelines]
+intent: policy
+last_modified: 2025-10-27
+schema_version: 1
+---
 
 **AI Agents:** Use this structure to answer questions based on specific project requirements, and create rule-xxx files for detailed guidelines. Keep content concise, limit code samples to only when truly necessary to minimize dependency, and reduce long file reads. Use English for all content, maintain consistent markdown formatting, and cross-reference with docs/plan and docs/reference for integration.
 
@@ -23,8 +30,11 @@ The `rules/` directory contains essential development guidelines and regulations
 - How to integrate with reference and plan documents?
 - What is the order for implementation, testing, and deployment?
 
-## Related Files
+## References
 - [`README.md`](./README.md): Main overview of development rules (this file).
+- [`docs/README.md`](../README.md): Main documentation overview.
+- [`plan/README.md`](../plan/README.md): Project plans and phases.
+- [`reference/README.md`](../reference/README.md): Reference materials.
 - For specific requirements (e.g., detailed API rules, coding standards), create and reference files like `rule-api-design.md`, `rule-coding-standards.md`, etc., in this directory. AI Agents should check for these files when needed.
 
 ## Sample Content
