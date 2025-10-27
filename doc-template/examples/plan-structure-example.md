@@ -1,7 +1,7 @@
 ---
 title: "Plan Structure Example"
-description: "Complete example showing proper relationship between plan and plan-detail documentation."
-tags: [example, plan-structure, reference]
+description: "Reference examples showing proper structure and relationship between plan and plan-detail documentation."
+tags: [example, plan-structure, reference, template]
 intent: reference
 last_modified: 2025-10-27
 schema_version: 1
@@ -9,7 +9,18 @@ schema_version: 1
 
 # Plan Structure Example
 
-This document provides a complete example of how plan and plan-detail should be structured and related to each other.
+**IMPORTANT**: This document is for REFERENCE ONLY. It provides examples of how plan and plan-detail should be structured and related to each other. Do NOT copy this entire structure to your actual project - use it as a guide for creating your own project-specific documentation.
+
+## Purpose of Examples Directory
+
+The `examples/` directory contains:
+- Reference templates and examples for documentation structure
+- Illustrations of proper formatting and content organization
+- Samples of correct relationships between different document types
+- Best practices for creating project documentation
+
+**DO NOT**: Copy the entire examples directory to your actual project
+**DO**: Use these examples as reference when creating your own project-specific documentation
 
 ## Example Scenario
 
@@ -131,30 +142,52 @@ see_also:
 
 1. **Numbering Consistency**:
    - Phase 1 in plan corresponds to phase-1.md in plan-detail
-   - Task 1.1 in plan corresponds to section 1.1 in plan-detail
+   - Function 1.1 in plan corresponds to section 1.1 in plan-detail
 
 2. **Content Hierarchy**:
-   - Plan states "Initialize project structure and configuration"
-   - Plan-detail breaks this down into specific steps like "Create main project directory", "Set up subdirectories", etc.
+   - Plan states "User registration with email verification" (WHAT function)
+   - Plan-detail breaks this down into specific implementation steps like "Create registration form", "Implement email verification service", etc. (HOW to implement)
 
 3. **Cross-References**:
-   - Plan references plan-detail files for detailed steps
+   - Plan references plan-detail files for detailed implementation steps
    - Plan-detail references back to the main plan for context
 
 4. **Level of Detail**:
-   - Plan focuses on WHAT needs to be done
-   - Plan-detail focuses on HOW to do it with specific steps
+   - Plan focuses on WHAT functions will be implemented (checklist format)
+   - Plan-detail focuses on HOW to implement each function with specific steps
+
+5. **Brainstorming Connection**:
+   - Plan functions are derived from brainstorming sessions based on requirements
+   - Each function represents a user-facing feature or capability
 
 ## Common Mistakes to Avoid
 
-### Incorrect Plan Example:
+### Incorrect Plan Example (Too Technical):
 ```markdown
-### Phase 1: Project Setup
-- [ ] 1.1: Create main project directory with appropriate naming convention
-- [ ] 1.2: Set up subdirectories: src/, tests/, docs/, config/
-- [ ] 1.3: Initialize package.json with project metadata and dependencies
+### Phase 1: Backend Setup
+- [ ] 1.1: Create database schema with user table
+- [ ] 1.2: Implement JWT authentication middleware
+- [ ] 1.3: Set up REST API endpoints
 ```
-*Problem: Too much detail - these are implementation steps, not high-level tasks*
+*Problem: Too technical - these are implementation details, not user-facing functions*
+
+### Incorrect Plan Example (Too Vague):
+```markdown
+### Phase 1: Authentication
+- [ ] 1.1: Set up auth
+- [ ] 1.2: Handle users
+- [ ] 1.3: Login stuff
+```
+*Problem: Too vague - doesn't clearly describe what functions will be implemented*
+
+### Correct Plan Example:
+```markdown
+### Phase 1: User Authentication
+- [ ] Function 1.1: User registration with email verification
+- [ ] Function 1.2: User login with password reset
+- [ ] Function 1.3: Social media login integration
+```
+*Good: Clear, user-facing functions that can be marked as completed*
 
 ### Incorrect Plan-Detail Example:
 ```markdown

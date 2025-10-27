@@ -16,6 +16,7 @@ This directory contains all technical documentation and development guidelines f
 ```
 docs/
 ├── old/                          # Deprecated or archived documentation
+├── examples/                      # Reference examples and templates (DO NOT copy to actual project)
 ├── [`plan/README.md`](./plan/README.md)                         # Project plans and phases (AI Agents follow this)
 ├── [`plan-detail/README.md`](./plan-detail/README.md)                  # Detailed breakdown of plans (AI Agents check for specifics)
 ├── [`plan-detail/phase-1.md`](./plan-detail/phase-1.md)                  # Detailed breakdown of Phase 1
@@ -85,7 +86,7 @@ For specific guidance on creating plan and plan-detail documents, refer to:
 - [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md): Complete workflow process with mandatory checklist
 - [`rules/ai-guidelines-plan-structure.md`](./rules/ai-guidelines-plan-structure.md)
 - [`rules/ai-content-creation-checklist.md`](./rules/ai-content-creation-checklist.md)
-- [`examples/plan-structure-example.md`](./examples/plan-structure-example.md)
+- [`examples/plan-structure-example.md`](./examples/plan-structure-example.md): Reference examples for plan and plan-detail structure (DO NOT copy to actual project).
 
 ## AI Agent Retrieval Tips
 - Prefer files whose front-matter intent/tags match your task before reading full content.
@@ -130,7 +131,7 @@ For specific guidance on creating plan and plan-detail documents, refer to:
 - [`rules/ai-workflow-process.md`](./rules/ai-workflow-process.md): Complete workflow process with mandatory checklist.
 - [`rules/ai-guidelines-plan-structure.md`](./rules/ai-guidelines-plan-structure.md): Guidelines for AI agents on plan and plan-detail structure.
 - [`rules/ai-content-creation-checklist.md`](./rules/ai-content-creation-checklist.md): Checklist for AI agents when creating content.
-- [`examples/plan-structure-example.md`](./examples/plan-structure-example.md): Complete examples of plan and plan-detail structure.
+- [`examples/plan-structure-example.md`](./examples/plan-structure-example.md): Reference examples for plan and plan-detail structure (for reference only).
 
 ## Front-matter template (copy/paste)
 ```yaml

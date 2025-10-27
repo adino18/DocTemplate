@@ -78,6 +78,8 @@ This document outlines the complete workflow process that AI agents should follo
 
 **Deliverables**: User-approved high-level functional concept
 
+**IMPORTANT**: The output of this step becomes the foundation for creating the high-level plan checklist in [`../plan/README.md`](../plan/README.md).
+
 ### Step 3: User Review (High-Level Concepts)
 
 **Objective**: Get user feedback and approval on the high-level functional concepts.
@@ -106,8 +108,10 @@ This document outlines the complete workflow process that AI agents should follo
 
 **Process**:
 1. **Create High-Level Plan** ([`plan/README.md`](../plan/README.md))
+   - **This is a CHECKLIST of high-level functions** derived from brainstorming in Step 2
    - Break down the project into logical phases based on work volume
-   - Define high-level tasks for each phase
+   - Define high-level tasks for each phase as checklist items
+   - Focus on WHAT functions will be implemented, not HOW
    - Follow guidelines in [`ai-guidelines-plan-structure.md`](./ai-guidelines-plan-structure.md)
    - Use checklist in [`ai-content-creation-checklist.md`](./ai-content-creation-checklist.md)
 
@@ -128,6 +132,10 @@ This document outlines the complete workflow process that AI agents should follo
    - Ensure all references are correct
 
 **Deliverables**: Complete plan, plan-detail, and related documentation
+
+**KEY DISTINCTION**:
+- [`plan/README.md`](../plan/README.md) = CHECKLIST of high-level functions (WHAT to build)
+- [`plan-detail/`](../plan-detail/) = Detailed implementation steps (HOW to build)
 
 ### Step 5: User Review (Plans and Documentation)
 
@@ -302,24 +310,30 @@ This document outlines the complete workflow process that AI agents should follo
 - [ ] **Document requirements**: Ensure all requirements are properly documented
 
 ### Phase 2: High-Level Planning
-- [ ] **Create high-level plan only**: Create/update only [`../plan/README.md`](../plan/README.md) with high-level phases and tasks
+- [ ] **Create high-level plan only**: Create/update only [`../plan/README.md`](../plan/README.md) as a CHECKLIST of high-level functions
 - [ ] **Do NOT create detailed plans yet**: Do not touch [`../plan-detail/`](../plan-detail/) directory at this stage
-- [ ] **Focus on phases only**: Include only phase descriptions and high-level tasks
+- [ ] **Focus on functions checklist**: Include only high-level functions derived from brainstorming, not implementation details
+- [ ] **Use checklist format**: Structure as checklist items that can be marked as completed
+- [ ] **STOP AND WAIT**: **MUST STOP** after creating high-level plan and wait for user approval before proceeding
 
 ### Phase 3: User Approval (High-Level)
 - [ ] **Present high-level plan**: Show the user the high-level plan from [`../plan/README.md`](../plan/README.md)
 - [ ] **Get explicit approval**: User must explicitly approve the high-level plan
 - [ ] **Wait for confirmation**: Do not proceed until user confirms approval
+- [ ] **DO NOT PROCEED**: **MUST NOT** create detailed plans until user explicitly approves high-level plan
 
 ### Phase 4: Detailed Planning
 - [ ] **Create detailed plans**: Only after high-level approval, create/update files in [`../plan-detail/`](../plan-detail/) directory
+- [ ] **Create ALL phase details**: Create detailed plans for ALL phases listed in high-level plan, not just phase 1
 - [ ] **Reference high-level plan**: Ensure detailed plans align with approved high-level plan
 - [ ] **Cross-reference properly**: Add proper cross-references between plan and plan-detail files
+- [ ] **STOP AND WAIT**: **MUST STOP** after creating all detailed plans and wait for user approval before proceeding
 
 ### Phase 5: User Approval (Detailed)
 - [ ] **Present detailed plans**: Show the user the detailed plans from [`../plan-detail/`](../plan-detail/) directory
 - [ ] **Get explicit approval**: User must explicitly approve the detailed plans
 - [ ] **Wait for confirmation**: Do not proceed with implementation until user confirms approval
+- [ ] **DO NOT PROCEED**: **MUST NOT** start implementation until user explicitly approves all detailed plans
 
 ### Phase 6: Implementation
 - [ ] **Follow approved plans**: Implement according to both approved high-level and detailed plans
