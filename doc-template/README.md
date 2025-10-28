@@ -112,7 +112,9 @@ For specific guidance on creating plan and plan-detail documents, refer to:
 - Keep docs in sync with current code.
 
 ## General Rules
-- All documents in this directory are written in English by default, except for specific documents that require a different language.
+- **LANGUAGE REQUIREMENT**: All documents MUST be written in English by default, except for specific documents that explicitly require a different language.
+- **NO VIETNAMESE CONTENT**: Do NOT write content in Vietnamese unless specifically requested for that particular document.
+- **ENGLISH TEMPLATES**: Use the English templates provided in this directory as the basis for all new documents.
 - All regulations and rules in this file are of the highest priority and must be followed in every action performed by AI Agents.
 
 ## Documentation Management Rules

@@ -9,6 +9,8 @@ schema_version: 1
 
 **Important:** This file is a CHECKLIST of high-level functions to be implemented. It focuses on WHAT functions will be built, not HOW to implement them. Do not add implementation details or code samples.
 
+**CRITICAL WORKFLOW RULE**: When creating or updating this checklist, you MUST STOP and wait for user approval before proceeding to create detailed plans. Do NOT continue to plan-detail creation until user explicitly approves the high-level checklist.
+
 ## Overview
 **Keywords:** functions, checklist, high-level, brainstorming, requirements.
 
@@ -43,6 +45,21 @@ Add more phases if needed, e.g., Phase 4: [High-level function area]
 3. **Keep it High-Level**: Avoid technical details, focus on what the user will see or experience
 4. **Use Checklist Format**: Structure as items that can be marked as completed during implementation
 5. **User-Facing Language**: Describe functions from user perspective when possible
+
+## MANDATORY STOP POINT
+
+**CRITICAL**: After creating or updating this high-level checklist, you MUST STOP and wait for user approval before proceeding to create detailed plans in the plan-detail directory.
+
+- **DO NOT** create any plan-detail files until user explicitly approves this high-level checklist
+- **DO NOT** proceed to implementation until both high-level and detailed plans are approved
+- **MUST WAIT** for explicit user confirmation before moving to the next step
+
+**WORKFLOW SEQUENCE**:
+1. Create/update high-level checklist in this file
+2. **STOP AND WAIT** for user approval
+3. Only after approval, create detailed plans in plan-detail directory
+4. **STOP AND WAIT** for user approval of detailed plans
+5. Only after both approvals, proceed to implementation
 
 ## Example
 

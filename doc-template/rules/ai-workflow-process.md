@@ -27,15 +27,22 @@ This document outlines the complete workflow process that AI agents should follo
 
 1. **REQUIREMENTS FIRST**: Always start by reading and understanding requirements from [`reference/requirement.md`](../reference/requirement.md)
 2. **HIGH-LEVEL PLAN**: Create only the high-level plan in [`plan/README.md`](../plan/README.md) first
-3. **USER APPROVAL**: Get explicit user approval on the high-level plan BEFORE creating detailed plans
-4. **DETAILED PLANS**: Only after user approval, create detailed plans in [`plan-detail/`](../plan-detail/) directory
-5. **CONTINUE**: Proceed with implementation only after both high-level and detailed plans are approved
+3. **STOP AND WAIT**: **MUST STOP** after creating high-level plan and **WAIT FOR EXPLICIT USER APPROVAL**
+4. **USER APPROVAL**: Get explicit user approval on the high-level plan BEFORE creating detailed plans
+5. **DETAILED PLANS**: Only after user approval, create detailed plans in [`plan-detail/`](../plan-detail/) directory
+6. **CONTINUE**: Proceed with implementation only after both high-level and detailed plans are approved
+
+**CRITICAL STOP POINTS**:
+- **AFTER CREATING HIGH-LEVEL PLAN**: You MUST STOP and wait for user approval
+- **AFTER CREATING DETAILED PLANS**: You MUST STOP and wait for user approval
+- **DO NOT PROCEED** to the next step without explicit user confirmation
 
 **DO NOT**:
 - Create detailed plans before getting approval on high-level plan
 - Skip the user review step between high-level and detailed planning
 - Work on multiple documentation directories simultaneously in the wrong order
 - Copy structure from doc-template to docs before following the proper workflow
+- **PROCEED TO NEXT STEP** without stopping and waiting for user approval
 
 ## Detailed Workflow Steps
 
@@ -114,12 +121,15 @@ This document outlines the complete workflow process that AI agents should follo
    - Focus on WHAT functions will be implemented, not HOW
    - Follow guidelines in [`ai-guidelines-plan-structure.md`](./ai-guidelines-plan-structure.md)
    - Use checklist in [`ai-content-creation-checklist.md`](./ai-content-creation-checklist.md)
+   - **CRITICAL**: After creating high-level plan, you MUST STOP and wait for user approval before proceeding to Step 4.2
+   - **MANDATORY**: You MUST create the plan/README.md file first before doing any other work
 
 2. **Create Detailed Plans** ([`plan-detail/`](../plan-detail/))
    - Create detailed breakdown for each phase
    - Provide specific implementation steps
    - Include dependencies and success criteria
    - Ensure proper cross-references with main plan
+   - **CRITICAL**: Only create detailed plans AFTER user has approved high-level plan
 
 3. **Create Additional Related Documents**
    - Create any other necessary documentation (e.g., technical specifications, API documentation)
@@ -136,6 +146,14 @@ This document outlines the complete workflow process that AI agents should follo
 **KEY DISTINCTION**:
 - [`plan/README.md`](../plan/README.md) = CHECKLIST of high-level functions (WHAT to build)
 - [`plan-detail/`](../plan-detail/) = Detailed implementation steps (HOW to build)
+
+**MANDATORY STOP**: After completing Step 4.1 (High-Level Plan), you MUST STOP and wait for explicit user approval before proceeding to Step 4.2 (Detailed Plans).
+
+**IMPORTANT WORKFLOW RULE**:
+- **FIRST**: Always create the high-level plan file (plan/README.md) before doing any other work
+- **THEN**: Stop and wait for user approval of the high-level plan
+- **ONLY AFTER**: User approval, proceed to create detailed plans
+- **NEVER**: Skip creating the high-level plan file or proceed without user approval
 
 ### Step 5: User Review (Plans and Documentation)
 
